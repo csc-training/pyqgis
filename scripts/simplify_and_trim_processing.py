@@ -1,7 +1,7 @@
 # defining input parameters
 
 # path to the NUTS3 layer
-input_layer_path = 'C:/Users/joker/OneDrive/Mantsa 6. vuosi/Work/PYQGIS-materials/data/practical_data.gpkg|layername=NUTS3_FIN_pop'
+input_layer_path = 'C:/Users/tatu/pyqgis_practical/data/practical_data.gpkg|layername=NUTS3_FIN_pop'
 tolerance = 5000
 # list of field names to keep
 fields_to_keep = ['name', 'pop']
