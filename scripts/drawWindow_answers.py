@@ -97,7 +97,7 @@ class drawWindow(QMainWindow):
             feature = QgsFeature()
             feature.setGeometry(polygon)
             data_str = "Polygon?crs=epsg:3067"
-            new_layer = QgsVectorLayer(data_str, "new_layer", "memory")
+            new_layer = QgsVectorLayer(data_str, "drawn_polygon", "memory")
             new_layer.dataProvider().addFeatures([feature])
             if new_layer.isValid():
                 QgsProject.instance().addMapLayer(new_layer)

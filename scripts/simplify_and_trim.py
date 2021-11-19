@@ -1,5 +1,4 @@
-proj_layers = QgsProject.instance().mapLayers()
-original_layer = list(proj_layers.values())[0]
+original_layer = QgsProject.instance().mapLayersByName("NUTS2_FIN_pop")[0]
 
 # list where the features of the new layer will be gathered
 simplified_feat_list = []

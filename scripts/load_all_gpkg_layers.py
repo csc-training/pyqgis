@@ -1,5 +1,5 @@
 # EXAMPLE PATH: define the actual path on your system
-gpkg_path = "C:/Users/tatu/pyqgis_practical/data/practical_data.gpkg" # windows
+gpkg_path = "C:/Users/joker/OneDrive/Mantsa 6. vuosi/Work/PYQGIS-dev/data/practical_data.gpkg" # windows
 gpkg_layer = QgsVectorLayer(gpkg_path, "whole_gpkg", "ogr")
 # returns a list of strings describing the sublayers
 # !!::!! separetes the values
