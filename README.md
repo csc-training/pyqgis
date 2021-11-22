@@ -28,7 +28,8 @@ The participants are assumed to have good practical skills of Python and QGIS, a
 
 10.40 – 12.00 A look at PyQGIS plugin development
 
- 
+
+ Alternatively, read the practical instructions through NBviewer for [Day 1](https://nbviewer.org/github/csc-training/pyqgis/blob/main/pyqgis_practical_day1.ipynb) and [Day 2](https://nbviewer.org/github/csc-training/pyqgis/blob/main/pyqgis_practical_day2.ipynb).
 
 ### Technical requirements for participant local computers:
 
