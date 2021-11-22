@@ -4,7 +4,7 @@
  
 This course gives a practical introduction to PyQGIS, the Python implementation in QGIS. Through hands-on exercises, you will learn to run Python code through the built-in console, create scripts, automate processes with the graphical Model Builder and processing tools, and create a simple graphical QGIS plugin.
 
-**Lecturer: Tatu Leppämäki (University of Helsinki)**
+**Lecturer and author of materials: Tatu Leppämäki (University of Helsinki)**
 
 ### Learning outcome
 
