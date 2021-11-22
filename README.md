@@ -14,15 +14,15 @@ The aim of this lesson is to get started with using Python in QGIS. You will lea
 
 The participants are assumed to have good practical skills of Python and QGIS, and be familiar with GIS and spatial data analysis in general.
 
-### Agenda (tentative)
+### Agenda
 
-#### Day 1
+#### [Day 1](./pyqgis_practical_day1.ipynb) 
 
 09.00 – 10.20 Introduction to Python in QGIS   
 
 10.40 – 12.00 Working with spatial data in PyQGIS
 
-#### Day 2
+#### [Day 2](./pyqgis_practical_day2.ipynb) 
 
 09.00 – 10.20 Automation with Model Builder and Processing tools   
 
