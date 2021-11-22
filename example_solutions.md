@@ -168,13 +168,37 @@ paavo.setSubsetString("")
 ### Challenge X: Layer styling and exporting map layouts
 
 * Make a map with some other variable. Absolute values should normally not be used directly in a choropleth map. So, first calculate some other relative variable.
+<details>
+  <summary>Solution</summary>
+  
+```python
+# Calculate the share of highly educated of population, the same way as earlier for student procentage.
+# Do this rather in Python console, or only once from Python editor, not to add new column each time you try some new visualization.
+degree_exp = '("ko_yl_kork" / "pt_vakiy") *100'
+layer.addExpressionField(degree_exp, QgsField("degree_perc",  QVariant.Double, prec=1))
+# Use "degree_perc" as thematic_field.
+```
+
+</details>
 
 * Zoom in the map in the layout to your home area.
+  
+<details>
+  <summary>Solution</summary>  
+  
+```python
+# For zooming in, change map scale, for example:
+map.setScale(2000000)
 
-* Change the styling as you wish: For example, play around with different color ramps.
+# Option 1 for setting the area. Use map extent from QGIS main map.
+# Zoom in the map to your area and then run the script with setExtent set in this way:
+map.setExtent(iface.mapCanvas().extent())
+# Option 2 for setting the area. Set coordinate values manually. You can still check corner coordinates from QGIS main map.
+map.setExtent(QgsRectangle(340000, 6650000, 370000, 6680000))
+```
 
-[Starting script from material here](https://github.com/csc-training/pyqgis/blob/main/scripts/SCRIPT_day1_challengeX.py), no solution, just play around :)
-
+</details>
+  
 
 ### Challenge Y: Playing around with a drawing tool
 
