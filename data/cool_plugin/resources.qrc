@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/cool_plugin" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
