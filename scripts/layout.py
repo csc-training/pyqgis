@@ -21,7 +21,7 @@ layer = QgsProject().instance().mapLayersByName(layer_name)[0]
 # Get color ramp by name (set above)
 # See default_style.colorRampNames() for all options
 default_style = QgsStyle().defaultStyle()
-color_ramp = default_style.colorRamp('PuBu')
+color_ramp = default_style.colorRamp('Spectral')
 
 # Use Graduated symbology
 renderer = QgsGraduatedSymbolRenderer()
