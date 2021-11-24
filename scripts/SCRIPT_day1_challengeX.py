@@ -107,3 +107,27 @@ exporter = QgsLayoutExporter(layout)
 
 #exporter.exportToImage(fn, QgsLayoutExporter.ImageExportSettings())
 exporter.exportToPdf(fn, QgsLayoutExporter.PdfExportSettings())
+
+## EXTRA
+# Useful commands to get to know current style settings, when trying to repeat style that has beend defined in QGIS GUI.
+
+# Render style and some info
+renderer = layer.renderer()
+renderer.dump()
+# Output:
+# 'GRADUATED: attr pt_vakiy\n
+# 0 - 136.2::0 - 136,2::FILL SYMBOL (1 layers) color 215,25,28,255
+# \n136.2 - 297::136,2 - 297::FILL SYMBOL (1 layers) color 253,174,97,255\n
+# 297 - 815.6::297 - 815,6::FILL SYMBOL (1 layers) color 255,255,191,255
+# \n815.6 - 2778.6::815,6 - 2778,6::FILL SYMBOL (1 layers) color 171,221,164,255\n
+# 2778.6 - 27104::2778,6 - 27104::FILL SYMBOL (1 layers) color 43,131,186,255\n'
+
+# Style of each class
+for sym in renderer.symbols(QgsRenderContext()):
+    sym.symbolLayer(0).properties()
+# Output, similar for each class:
+# {'border_width_map_unit_scale': '3x:0,0,0,0,0,0', 'color': '215,25,28,255', 
+# 'joinstyle': 'bevel', 'offset': '0,0', 'offset_map_unit_scale': '3x:0,0,0,0,0,0', 
+# 'offset_unit': 'MM', 'outline_color': '35,35,35,255', 'outline_style': 'no', 
+# 'outline_width': '0.26', 'outline_width_unit': 'MM', 'style': 'solid'}
+    
