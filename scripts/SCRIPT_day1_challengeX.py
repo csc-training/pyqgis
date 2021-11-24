@@ -2,7 +2,7 @@
 
 # Set layer name and desired paremeters
 layer_name = 'Paavo'
-thematic_field = 'pt_vakiy'
+thematic_field = 'perc_students'
 
 # Define the layout's output filepath
 fn = 'C:/temp/layout_export.pdf'
